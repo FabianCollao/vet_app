@@ -23,6 +23,9 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     private RolUsuario rol;
     
+    public Usuario() {
+    	
+    }
 	public Usuario(int id, String user, String password, String correo, RolUsuario rol) {
 		super();
 		this.id = id;

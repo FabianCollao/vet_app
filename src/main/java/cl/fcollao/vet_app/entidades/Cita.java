@@ -36,6 +36,20 @@ public class Cita {
     @Enumerated(EnumType.STRING)
     private EstadoCita estado;
 
+    public Cita() {
+    	
+    }
+	public Cita(int id, LocalDateTime fecha, String motivoConsulta, Mascota mascota, DoctorVeterinario doctor,
+			EstadoCita estado) {
+		super();
+		this.id = id;
+		this.fecha = fecha;
+		this.motivoConsulta = motivoConsulta;
+		this.mascota = mascota;
+		this.doctor = doctor;
+		this.estado = estado;
+	}
+
 	/**
 	 * @return the id
 	 */

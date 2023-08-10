@@ -21,7 +21,7 @@
         <property name="username" value="root" />
 
         <!-- Contraseña de Acceso -->
-        <property name="password" value="" />
+        <property name="password" value="!Root1234" />
     </bean>
 
     <!-- Configuración de JPA -->

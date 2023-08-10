@@ -16,7 +16,9 @@ public class DoctorVeterinario extends Usuario {
     private String especialidad;
     private Integer experiencia;
     
-    
+    public DoctorVeterinario() {
+    	
+    }
 	public DoctorVeterinario(int id, String user, String password, String correo, RolUsuario rol, String nombres,
 			String apellidoPaterno, String especialidad, Integer experiencia) {
 		super(id, user, password, correo, rol);
