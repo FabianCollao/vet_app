@@ -18,12 +18,13 @@ public class Vacuna {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "mascota_id")
+    @JoinColumn(name = "mascota_id",referencedColumnName="id")
     private Mascota mascota;
 
     private String nombre;
     private LocalDate fecha;
     private boolean realizada;
+    
 	public int getId() {
 		return id;
 	}

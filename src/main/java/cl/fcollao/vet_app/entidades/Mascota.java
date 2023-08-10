@@ -17,7 +17,7 @@ public class Mascota {
     private String nombre;
     private String especie;
     private String raza;
-    private Integer edad;
+    private String edad;
     private String genero;
 
     @ManyToOne
@@ -56,11 +56,11 @@ public class Mascota {
 		this.raza = raza;
 	}
 
-	public Integer getEdad() {
+	public String getEdad() {
 		return edad;
 	}
 
-	public void setEdad(Integer edad) {
+	public void setEdad(String edad) {
 		this.edad = edad;
 	}
 

@@ -1,5 +1,5 @@
 package cl.fcollao.vet_app.entidades;
 
 public enum RolUsuario {
-	ADMINISTRADOR, DOCTOR, DUEÑO
+	ADMINISTRADOR, DOCTOR, DUEÑO, RECEPCION
 }

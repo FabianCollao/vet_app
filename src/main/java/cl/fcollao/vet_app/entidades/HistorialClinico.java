@@ -15,7 +15,7 @@ import javax.persistence.Table;
 public class HistorialClinico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @ManyToOne
     @JoinColumn(name = "mascota_id")
@@ -25,10 +25,11 @@ public class HistorialClinico {
     private String tratamiento;
     private String notas;
     private Date fecha;
-	public Long getId() {
+    
+	public int getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public Mascota getMascota() {
