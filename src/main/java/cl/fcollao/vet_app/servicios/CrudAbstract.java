@@ -2,9 +2,13 @@ package cl.fcollao.vet_app.servicios;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Component;
+
 
 public abstract class CrudAbstract<T,ID>{
+	
 	
 	protected JpaRepository<T, ID> repo;
 	

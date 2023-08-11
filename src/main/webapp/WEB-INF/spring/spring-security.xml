@@ -30,8 +30,8 @@
 		<authentication-provider>
 			<password-encoder hash="bcrypt" />
 			<jdbc-user-service data-source-ref="dataSource"
-				users-by-username-query="SELECT user, password, 1 as enabled from usuario where nombre= ?"
-				authorities-by-username-query="SELECT user, rol as authority from usuario where nombre= ?"/>
+				users-by-username-query="SELECT user, password, 1 as enabled from usuario where user= ?"
+				authorities-by-username-query="SELECT user, rol as authority from usuario where user= ?"/>
 			<!-- <user-service>
 				<user name="Admin" authorities="ADMIN"
 					password="$2a$10$JjF53QXqvUX08G9LPMBC8uJFQJHIg2eDEfrPhF1j4UAwIy2pXajOe" />

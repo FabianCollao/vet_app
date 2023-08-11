@@ -11,6 +11,34 @@
 .txt-p1 {
 	color: rgb(2, 136, 136);
 }
+.lg-icon{
+	font-size: 150px;
+}
+.txt-grad {
+	 background: linear-gradient(to right, #CAF272, #F2EDA0);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+}
+.color-1{
+	color:#03A6A6;
+}
+.color-2{
+	color:#2BD9B9;
+}
+.color-3{
+	color:#CAF272;
+}
+.color-3{
+	color:#F2EDA0;
+}
+.glass-effect {
+        background: rgba(255, 255, 255, 0.15); /* Color de fondo con transparencia */
+        border-radius: 10px; /* Ajusta el radio de las esquinas */
+        backdrop-filter: blur(10px); /* Aplicar el efecto borroso */
+        padding: 20px; /* Ajusta el espaciado interior para el efecto */
+        display: inline-block;
+    }
 @media(max-width:991px){
 	.sidebar{
 		background-color:#03A6A6;

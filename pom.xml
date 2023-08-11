@@ -27,13 +27,10 @@
 
         <!-- JavaServer Pages Standard Tag Library -->
         <javax.servlet.jstl-version>1.2</javax.servlet.jstl-version>
-        
-		<!-- MySQL Connector -->
-		<mysql-connector-java-version>8.0.28</mysql-connector-java-version>
-		
+
         <!-- Spring Framework -->
         <org.springframework-version>5.2.8.RELEASE</org.springframework-version>
-	
+
         <!-- Spring Data JPA -->
         <org.springframework.data-version>2.3.3.RELEASE</org.springframework.data-version>
 
@@ -68,6 +65,21 @@
 
     <!-- Dependencias -->
     <dependencies>
+		<!-- Apache Log4j Core > https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${org.apache.logging.log4j-version}</version>
+        </dependency>
+
+        <!-- Apache Log4j SLF4J Binding > https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${org.apache.logging.log4j-version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Java Servlet API > https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -90,12 +102,6 @@
             <artifactId>jstl</artifactId>
             <version>${javax.servlet.jstl-version}</version>
         </dependency>
-		<!--MySQL Connector > https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>${mysql-connector-java-version}</version>
-		</dependency>
 
         <!-- Spring Web MVC > https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
         <dependency>
@@ -103,6 +109,14 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${org.springframework-version}</version>
         </dependency>
+	
+		<!-- Spring Framework: Context >
+		https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
 
         <!-- Spring Data JPA > https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
         <dependency>
@@ -110,6 +124,53 @@
             <artifactId>spring-data-jpa</artifactId>
             <version>${org.springframework.data-version}</version>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-taglibs</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+        
+        	<!--
+		https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.2.Final</version>
+		</dependency>
+        
+        	<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
 
         <!-- Hibernate Core > https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
         <dependency>
@@ -132,6 +193,20 @@
             <version>${javax.validation-version}</version>
         </dependency>
 
+        <!-- Oracle JDBC -->
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.4</version>
+        </dependency>
+        
+        	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.28</version>
+		</dependency>
+
 
         <!-- Jackson Databind > https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
@@ -147,21 +222,6 @@
             <version>${com.fasterxml.jackson.core-version}</version>
         </dependency>
 
-        <!-- Apache Log4j Core > https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>${org.apache.logging.log4j-version}</version>
-        </dependency>
-
-        <!-- Apache Log4j SLF4J Binding > https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>${org.apache.logging.log4j-version}</version>
-            <scope>test</scope>
-        </dependency>
-
         <!-- Spring TestContext Framework > https://mvnrepository.com/artifact/org.springframework/spring-test -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -169,34 +229,6 @@
             <version>${org.springframework-version}</version>
             <scope>test</scope>
         </dependency>
-        
-		<!-- Spring Security Core -->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-
-		<!-- Spring Security Web -->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-
-		<!-- Spring Security Config -->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-config</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-		
-		<!-- Spring Security Taglibs -->
-		<dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-taglibs</artifactId>
-		    <version>${org.springframework-version}</version>
-		</dependency>
 
         <!-- Hamcrest Library > https://mvnrepository.com/artifact/org.hamcrest/hamcrest-library -->
         <dependency>

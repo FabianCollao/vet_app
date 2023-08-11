@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Iconos Bootstrap -->
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -44,7 +41,7 @@
         </ul>
         <!-- Login / Sign Up -->
         <div class="d-flex flex-column  flex-lg-row justify-content-center align-items-center gap-3">
-         <a href="#" class="text-decoration-none px-3 py-1 rounded-4 txt-p1" style="background-color: #CAF272">Login</a>
+         <a href="login" class="text-decoration-none px-3 py-1 rounded-4 txt-p1" style="background-color: #CAF272">Login</a>
         </div>
       </div>
     </div>

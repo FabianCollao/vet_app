@@ -11,19 +11,19 @@ public class Log {
 		log = (Logger) LogManager.getLogger(clase);
 		switch (tipo) {
 		case DEBUG:
-			log.debug(mensaje);
+			log.debug("["+clase+"]"+mensaje);
 			break;
 		case ERROR:
-			log.error(mensaje);
+			log.error("["+clase+"]"+mensaje);
 			break;
 		case FATAL:
-			log.fatal(mensaje);
+			log.fatal("["+clase+"]"+mensaje);
 			break;
 		case INFO:
-			log.info(mensaje);
+			log.info("["+clase+"]"+mensaje);
 			break;
 		case WARNING:
-			log.warn(mensaje);
+			log.warn("["+clase+"]"+mensaje);
 			break;
 		default:
 			log.debug("Tipo de Log desconocido :"+ tipo);
