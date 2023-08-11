@@ -4,3 +4,7 @@
 
 <!-- CSS Propio -->
         <link rel="stylesheet" href="<c:url value="/res/css/estilo.css" />">
+
+<!-- Iconos Bootstrap -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">

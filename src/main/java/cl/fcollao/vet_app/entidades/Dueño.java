@@ -18,6 +18,9 @@ public class Dueño extends Usuario {
     private String direccion;
     private int telefono;
     
+    public Dueño(){
+    	
+    }
     public Dueño(int id, String user, String password, String correo, RolUsuario rol) {
 		super(id, user, password, correo, rol);
 		// TODO Auto-generated constructor stub

@@ -26,6 +26,21 @@ public class HistorialClinico {
     private String notas;
     private Date fecha;
     
+    
+    public HistorialClinico() {
+    	
+    }
+    
+	public HistorialClinico(int id, Mascota mascota, String diagnostico, String tratamiento, String notas, Date fecha) {
+		super();
+		this.id = id;
+		this.mascota = mascota;
+		this.diagnostico = diagnostico;
+		this.tratamiento = tratamiento;
+		this.notas = notas;
+		this.fecha = fecha;
+	}
+
 	public int getId() {
 		return id;
 	}

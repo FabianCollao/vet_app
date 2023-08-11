@@ -24,6 +24,20 @@ public class Mascota {
     @JoinColumn(name = "dueño_id")
     private Dueño dueño;
 
+    public Mascota() {
+    	
+    }
+	public Mascota(int id, String nombre, String especie, String raza, String edad, String genero, Dueño dueño) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.especie = especie;
+		this.raza = raza;
+		this.edad = edad;
+		this.genero = genero;
+		this.dueño = dueño;
+	}
+
 	public int getId() {
 		return id;
 	}

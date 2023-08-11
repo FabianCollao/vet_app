@@ -25,6 +25,20 @@ public class Vacuna {
     private LocalDate fecha;
     private boolean realizada;
     
+    
+    public Vacuna() {
+    	
+    }
+    
+	public Vacuna(int id, Mascota mascota, String nombre, LocalDate fecha, boolean realizada) {
+		super();
+		this.id = id;
+		this.mascota = mascota;
+		this.nombre = nombre;
+		this.fecha = fecha;
+		this.realizada = realizada;
+	}
+
 	public int getId() {
 		return id;
 	}
