@@ -11,7 +11,7 @@
 </head>
 <body class="bg-gradiente">
 	<main class="flex-shrink-0 content">
-		<div class="container mt-4">
+		<div class="container mt-4  ">
 			<!-- Fomulario de login -->
 			<div class="row justify-content-center">
 				<div class="col-lg-4 col-md-6">

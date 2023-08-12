@@ -20,10 +20,11 @@
 		<!-- Formulario Login personalizado -->
 		<form-login login-page="/login"
 				authentication-failure-url="/error" 
+				default-target-url="/principal"
 				username-parameter="user"
 				password-parameter="password"/>
 		<csrf disabled="true" />
-		<logout logout-success-url="/login" />
+		<logout logout-success-url="/" />
 	</http>
 
 	<authentication-manager>
