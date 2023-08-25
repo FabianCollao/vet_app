@@ -1,19 +1,19 @@
 <%@include file="taglibs.jsp" %>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset=UTF-8">
 <title>Inicio</title>
 <!-- CSS -->
 <%@include file="css-proyecto.jsp" %>
 </head>
 <body>
-<!-- Sidebar Menu -->
-<%@include file="sidebar.jsp" %>
 <!-- Contenido -->
 <main>
+	<!-- Sidebar Menu -->
+	<%@include file="sidebar.jsp" %>
     <section class="custom-home">
         <div class="custom-text">Bienvenido, <sec:authentication property="principal.username" /></div>
         <p class="custom-text"> Ver Notificaciones</p>

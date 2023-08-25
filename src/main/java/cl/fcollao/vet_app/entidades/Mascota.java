@@ -78,11 +78,11 @@ public class Mascota {
 		this.edad = edad;
 	}
 
-	public String getgenero() {
+	public String getGenero() {
 		return genero;
 	}
 
-	public void setgenero(String genero) {
+	public void setGenero(String genero) {
 		this.genero = genero;
 	}
 

@@ -1,24 +1,22 @@
 package cl.fcollao.vet_app.servicios;
 
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import cl.fcollao.vet_app.entidades.Usuario;
+import cl.fcollao.vet_app.repositorios.IUsuarioRepositorio;
 
 @Service
-public class UsuarioServicio extends CrudAbstract<Usuario, Integer> {
+public class UsuarioServicio {
 	
-	
-	public UsuarioServicio(JpaRepository<Usuario, Integer> repositorio) {
-		super(repositorio);
-		// TODO Auto-generated constructor stub
-	}
-
-	/*
 	public UsuarioServicio() {
 		super();
 	}
+	
 	@Autowired
 	private IUsuarioRepositorio usuRepo;
 	
@@ -40,5 +38,4 @@ public class UsuarioServicio extends CrudAbstract<Usuario, Integer> {
 	public void crearUsuario(Usuario usu) {
 		usuRepo.save(usu);
 	}
-	*/
 }

@@ -51,15 +51,15 @@
 					<span class="custom-text nav-text">Logout</span>
 			</a></li>
 
-			<li class="mode">
+			<!-- <li class="mode">
 				<div class="sun-moon">
 					<i class='bx bx-moon icon moon'></i> <i class='bx bx-sun icon sun'></i>
-				</div> <span class="mode-text custom-text">Dark mode</span>
+				</div> <span class="mode-text custom-text">Modo Oscuro</span>
 
 				<div class="toggle-switch">
 					<span class="switch"></span>
 				</div>
-			</li>
+			</li> -->
 
 		</div>
 	</div>

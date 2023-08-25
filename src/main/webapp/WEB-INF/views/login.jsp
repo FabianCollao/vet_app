@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html class="h-100 translated-ltr">
 <head>
-<meta charset="ISO-8859-1">
-<title>Iniciar Sesión</title>
+<meta charset="UTF-8">
+<title>Iniciar SesiÃ³n</title>
 <!-- CSS del proyecto -->
 <%@ include file='css-proyecto.jsp'%>
 </head>
@@ -21,17 +21,17 @@
 							<c:when test="${error}">
 								<div class="alert alert-danger" style="text-align: center"
 									role="alert">
-									Error al iniciar sesión.
+									Error al iniciar sesiÃ³n.
 								</div>
 							</c:when>
 							<c:when test="${logoutt}">
 								<div class="alert alert-warning" style="text-align: center"
 									role="alert">
-									Se cerró la sesión correctamente.
+									Se cerrÃ³ la sesiÃ³n correctamente.
 								</div>
 							</c:when>
 						</c:choose>
-							<h1 class="card-title text-center">Iniciar Sesión</h1>
+							<h1 class="card-title text-center">Iniciar SesiÃ³n</h1>
 							<div class="row justify-content-center">
 								<span class="txt-grad d-flex justify-content-center align-items-center">
 									<i class="bi bi-person-circle lg-icon"></i>
@@ -44,7 +44,7 @@
 							    </div>
 								<div class="form-floating mb-3">
 							      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
-							      <label for="floatingPassword">Contraseña</label>
+							      <label for="floatingPassword">ContraseÃ±a</label>
 							    </div>
 								<div class="mb-3 form-check">
 									<input type="checkbox" class="form-check-input" id="rememberMe"
@@ -53,7 +53,7 @@
 								</div>
 								<div class="text-center">
 									<button type="submit" class="btn btn-secondary w-75">Iniciar
-										Sesión</button>
+										SesiÃ³n</button>
 								</div>
 							</form>
 						</div>

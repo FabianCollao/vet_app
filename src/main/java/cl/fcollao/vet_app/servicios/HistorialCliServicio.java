@@ -1,16 +1,41 @@
 package cl.fcollao.vet_app.servicios;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import cl.fcollao.vet_app.entidades.HistorialClinico;
+import cl.fcollao.vet_app.repositorios.IHistorialClinicoRepositorio;
 
 @Service
-public class HistorialCliServicio extends CrudAbstract<HistorialClinico, Integer> {
+public class HistorialCliServicio {
+	
+	@Autowired
+	private IHistorialClinicoRepositorio histRepo;
+	
+	public HistorialCliServicio() {
+		super();
+	}
 
-	public HistorialCliServicio(JpaRepository<HistorialClinico, Integer> repositorio) {
-		super(repositorio);
-		// TODO Auto-generated constructor stub
+	public List<HistorialClinico> obtenerHistorialClinicos(){
+		return histRepo.findAll();
+	}
+	
+	public HistorialClinico obtenerHistorialClinico(int id) {
+		return histRepo.findById(id).get();
+	}
+	
+	public void crearHistorialClinico(HistorialClinico historial) {
+		histRepo.save(historial);
+	}
+	
+	public void actualizar(HistorialClinico historial) {
+		histRepo.save(historial);
+	}
+	
+	public void borrarHistorialClinico(int id) {
+		histRepo.delete(histRepo.getOne(id));
 	}
 
 }

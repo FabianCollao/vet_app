@@ -53,16 +53,32 @@
 
 }
 .color-1{
-	color:#03A6A6;
+	color:var(--primary-color);
+}
+.bg-col-1{
+	background-color:var(--primary-color);
 }
 .color-2{
-	color:#2BD9B9;
+	color:var(--sidebar-color);
+}
+.bg-col-2{
+	background-color:var(--sidebar-color);
 }
 .color-3{
 	color:#CAF272;
 }
-.color-3{
+.bg-col-3{
+	background-color: #CAF272;
+}
+.color-4{
 	color:#F2EDA0;
+}
+.bg-col-4{
+	background-color:#F2EDA0;
+}
+
+.btn.bg-col-2:hover{
+	background-color: var(--primary-color);
 }
 .glass-effect {
         background: rgba(255, 255, 255, 0.15); /* Color de fondo con transparencia */

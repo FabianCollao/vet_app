@@ -48,43 +48,43 @@ public class RestUsuarioControlador {
 	
 	@RequestMapping(value="/api/usuarios",headers="Accept=application/json")
 	public List<Usuario> obtenerUsuarios(){
-		return usu.getAll();
+		return usu.obtenerUsuarios();
 	}
 
 	@RequestMapping(value="/api/usuarios/{id}", headers="Accept=application/json")
 	public Usuario getUsuario(@PathVariable("id") int id){
-		return usu.getOne(id);
+		return usu.obtenerUsuario(id);
 	}
 	
 	//Vacunas
 	@RequestMapping(value="/api/vacunas",headers="Accept=application/json")
 	public List<Vacuna> obtenerVacunas(){
-		return vac.getAll();
+		return vac.obtenerVacunas();
 	}
 	
 	//
 	@RequestMapping(value="/api/mascotas",headers="Accept=application/json")
 	public List<Mascota> obtenerMascotas(){
-		return masc.getAll();
+		return masc.obtenerMascotas();
 	}
 	//
 	@RequestMapping(value="/api/doctores",headers="Accept=application/json")
 	public List<DoctorVeterinario> obtenerDoctores(){
-		return doct.getAll();
+		return obtenerDoctores();
 	}
 	//
 	@RequestMapping(value="/api/dueños",headers="Accept=application/json")
 	public List<Dueño> obtenerDueños(){
-		return due.getAll();
+		return due.obtenerDueños();
 	}
 	//
 	@RequestMapping(value="/api/historiales",headers="Accept=application/json")
 	public List<HistorialClinico> obtenerHistoriales(){
-		return hist.getAll();
+		return hist.obtenerHistorialClinicos();
 	}
 	//
 	@RequestMapping(value="/api/citas",headers="Accept=application/json")
 	public List<Cita> obtenerCitas(){
-		return cita.getAll();
+		return cita.obtenerCitas();
 	}
 }
