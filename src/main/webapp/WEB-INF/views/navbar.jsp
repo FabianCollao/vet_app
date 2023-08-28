@@ -3,7 +3,7 @@
 <head>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradiente sticky-top">
   <div class="container">
   <!-- Logo -->
     <a class="navbar-brand fs-4" href="#">
@@ -30,13 +30,13 @@
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Sobre Nosotros</a>
+            <a class="nav-link" href="#about">Sobre Nosotros</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Servicios</a>
+            <a class="nav-link" href="#servicio">Servicios</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
         <!-- Login / Sign Up -->
