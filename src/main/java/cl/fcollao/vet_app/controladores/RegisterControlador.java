@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import cl.fcollao.vet_app.entidades.Dueño;
 import cl.fcollao.vet_app.servicios.DueñoServicio;
 import cl.fcollao.vet_app.utils.Log;
 import cl.fcollao.vet_app.utils.TipoLog;
@@ -29,14 +30,21 @@ public class RegisterControlador {
 	@RequestMapping(value = "/register", method=RequestMethod.POST)
     public ModelAndView registrarUsuario(@RequestParam("user") String nombreUsuario,
     		@RequestParam("password") String contraseña,
-    		@RequestParam("confirmPassword") String confirmarContraseña) {
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		Boolean logoutt = false;
-		if(auth != null) {
-			SecurityContextHolder.getContext().setAuthentication(null);
-			logoutt = true;
-			Log.registrar(getClass(), TipoLog.INFO, "Usuario cerró sesión");
+    		@RequestParam("confirmPassword") String confirmarContraseña,
+    		@RequestParam("nombres") String nombres,
+    		@RequestParam("correo") String correo,
+    		@RequestParam("apellidoPaterno") String apellidoPaterno,
+    		@RequestParam("direccion") String direccion,
+    		@RequestParam("telefono") int telefono) {
+		
+		//Validacion contraseña para encriptación
+		if(contraseña.equals(confirmarContraseña.trim())) {
+			contraseña = passwordEncoder.encode(contraseña);
+			dueñoServ.crearDueño(
+					new Dueño(nombreUsuario, correo, contraseña, nombres, apellidoPaterno, direccion, telefono));
+			Log.registrar(getClass(), TipoLog.INFO, "Usuario Dueño("+nombres+") registrado");
+			
 		}
-        return new ModelAndView("redirect:/login?logout").addObject(logoutt);
-    }
+		return new ModelAndView("redirect:/login");
+	}
 }

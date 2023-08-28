@@ -23,24 +23,24 @@ public class DoctorControlador {
 	
 	@RequestMapping(value = "/principal", method = RequestMethod.GET)
     public ModelAndView webPrincipal() {
-        return new ModelAndView("doctor-principal");
+        return new ModelAndView("principal");
     }
 	
 	@RequestMapping(value = "/agenda", method = RequestMethod.GET)
     public ModelAndView webAgenda() {
-        return new ModelAndView("doctor-agenda");
+        return new ModelAndView("agenda");
     }
 	@RequestMapping(value = "/notificaciones", method = RequestMethod.GET)
     public ModelAndView webNotificaciones() {
-        return new ModelAndView("doctor-notificaciones");
+        return new ModelAndView("notificaciones");
     }
 	@RequestMapping(value = "/pacientes", method = RequestMethod.GET)
     public ModelAndView webPacientes() {
 		List<Mascota> listaPacientes = mascServ.obtenerMascotas();
-        return new ModelAndView("doctor-pacientes","listaPacientes",listaPacientes);
+        return new ModelAndView("pacientes","listaPacientes",listaPacientes);
     }
 	@RequestMapping(value = "/reporte", method = RequestMethod.GET)
     public ModelAndView webReporte() {
-        return new ModelAndView("doctor-reporte");
+        return new ModelAndView("reporte");
     }
 }

@@ -11,40 +11,69 @@
 </head>
 <body class="bg-gradiente">
 	<main class="">
-		<div class="container ">
-			<!-- Formulario de registro -->
+		<div class="container">
 			<div
-				class="d-flex justify-content-center align-items-center hgt-100 p-2">
-				<div class="card shadow-lg">
-					<h1 class="card-title text-center bg-col-3 p-2 rounded-top color-1">Registrarse</h1>
-					<div class="card-body">
-						<form action="register" method="POST">
-							<!-- Cambio en el atributo "action" -->
-							<div class="form-floating mb-3">
-								<input type="text" class="form-control" id="floatingInput"
-									name="user" placeholder="nombre usuario"> <label
-									for="floatingInput">Usuario</label>
+				class="d-flex justify-content-center align-items-center hgt-100 p-2 row">
+				<div class="col-lg-3"></div>
+				<div class="card shadow-lg col-lg-6">
+					<h1
+						class="card-title text-center bg-col-3 rounded-top color-1 w-100 py-3">Registrarse</h1>
+					<div class="card-body py-4">
+						<form action="register" method="POST" class="row g-3">
+							<div class="col-lg-6">
+								<label for="floatingNombres" class="form-label">Nombres</label>
+								<input type="text" class="form-control" id="floatingNombres"
+									name="nombres" placeholder="Nombres">
 							</div>
-							<div class="form-floating mb-3">
+							<div class="col-lg-6">
+								<label for="floatingApellidoPaterno" class="form-label">Apellido
+									Paterno</label> <input type="text" class="form-control"
+									id="floatingApellidoPaterno" name="apellidoPaterno"
+									placeholder="Apellido Paterno">
+							</div>
+							<div class="col-lg-6">
+								<label for="floatingDireccion" class="form-label">Dirección</label>
+								<input type="text" class="form-control" id="floatingDireccion"
+									name="direccion" placeholder="Dirección">
+							</div>
+							<div class="col-lg-6">
+								<label for="floatingTelefono" class="form-label">Teléfono</label>
+								<input type="tel" class="form-control" id="floatingTelefono"
+									name="telefono" placeholder="Teléfono">
+							</div>
+							<div class="col-lg-6">
+								<label for="floatingInput" class="form-label">Correo</label> <input
+									type="email" class="form-control" id="floatingInput"
+									name="correo" placeholder="name@example.com">
+							</div>
+							<div class="col-lg-6">
+								<label for="floatingInput" class="form-label">Usuario</label> <input
+									type="text" class="form-control" id="floatingInput" name="user"
+									placeholder="Usuario">
+							</div>
+							<div class="col-lg-6">
+								<label for="floatingPassword" class="form-label">Contraseña</label>
 								<input type="password" class="form-control"
 									id="floatingPassword" name="password" placeholder="Contraseña">
-								<label for="floatingPassword">Contraseña</label>
 							</div>
-							<div class="form-floating mb-3">
-								<input type="password" class="form-control"
+							<div class="col-lg-6">
+								<label for="floatingConfirmPassword" class="form-label">Confirmar
+									Contraseña</label> <input type="password" class="form-control"
 									id="floatingConfirmPassword" name="confirmPassword"
-									placeholder="Confirmar Contraseña"> <label
-									for="floatingConfirmPassword">Confirmar Contraseña</label>
+									placeholder="Confirmar Contraseña">
 							</div>
-							<div class="text-center">
+							<div class="col-12 text-center">
 								<button type="submit" class="btn bg-col-3 w-75">Registrarse</button>
 							</div>
 						</form>
 					</div>
 				</div>
+				<div class="col-lg-3"></div>
 			</div>
+
 		</div>
 	</main>
+
 
 	<!-- JavaScript Bootstrap -->
 	<script

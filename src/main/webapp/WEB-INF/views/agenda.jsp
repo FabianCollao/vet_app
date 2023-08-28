@@ -51,6 +51,8 @@
 					</div>
 				</div>
 			</div>
+			<!-- Comingsoon -->
+			<%@include file="comingsoon.jsp"%>
 		</section>
 	</main>
 

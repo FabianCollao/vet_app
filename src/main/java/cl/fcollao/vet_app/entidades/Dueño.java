@@ -21,11 +21,25 @@ public class Dueño extends Usuario {
     public Dueño(){
     	
     }
-    public Dueño(int id, String user, String password, String correo, RolUsuario rol) {
-		super(id, user, password, correo, rol);
-		// TODO Auto-generated constructor stub
-	}
     
+    
+	public Dueño(String nombres, String apellidoPaterno, String direccion, int telefono) {
+		super();
+		this.nombres = nombres;
+		this.apellidoPaterno = apellidoPaterno;
+		this.direccion = direccion;
+		this.telefono = telefono;
+	}
+
+	public Dueño(String nombreUsuario, String correo,String contraseña,String nombres, String apellidoPaterno, String direccion, int telefono) {
+		super(nombreUsuario,contraseña,correo,RolUsuario.DUEÑO);
+		this.nombres = nombres;
+		this.apellidoPaterno = apellidoPaterno;
+		this.direccion = direccion;
+		this.telefono = telefono;
+	}
+
+
 	public String getNombres() {
 		return nombres;
 	}

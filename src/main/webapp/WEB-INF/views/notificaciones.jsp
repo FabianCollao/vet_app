@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset=UTF-8">
 <title>Inicio</title>
 <!-- CSS -->
 <%@include file="css-proyecto.jsp"%>
@@ -19,7 +19,9 @@
 				Bienvenido,
 				<sec:authentication property="principal.username" />
 			</div>
-			<p class="custom-text">Ver Reporte</p>
+			<p class="custom-text">Ver Notificaciones</p>
+			<!-- Comingsoon -->
+			<%@include file="comingsoon.jsp"%>
 		</section>
 	</main>
 

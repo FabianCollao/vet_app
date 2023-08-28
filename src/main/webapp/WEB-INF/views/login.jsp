@@ -55,6 +55,9 @@
 									Sesión</button>
 							</div>
 						</form>
+							<div class="text-center">
+								<a href="register" class="btn bg-col-2 w-75 mt-2">Registrarme</a>
+							</div>
 					</div>
 				</div>
 			</div>

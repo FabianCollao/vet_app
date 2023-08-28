@@ -83,6 +83,9 @@
 .btn.bg-col-3:hover{
 	background-color: #F2EDA0;
 }
+.btn.bg-col-4:hover{
+	background-color:var(--primary-color);
+}
 .glass-effect {
         background: rgba(255, 255, 255, 0.15); /* Color de fondo con transparencia */
         border-radius: 10px; /* Ajusta el radio de las esquinas */
