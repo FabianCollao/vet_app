@@ -1,4 +1,4 @@
-# Portafolio Digital de la Clínica Veterinaria "AmiVets"
+# Portafolio Digital de la Clínica Veterinaria "AmiVet"
 
 > Todos los usuarios en la bdd tiene de contraseña `admin`
 
